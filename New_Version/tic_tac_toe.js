@@ -54,11 +54,11 @@ function makeMove(row, col)
     {
         scores[currentPlayer]++;
         updateScores();
-        document.getElementById('winnerMessage').textContent = `${currentPlayer === 'X' ? 'User 2' : 'User 1'}, you are loser!`;
+        document.getElementById('winnerMessage').textContent = `${currentPlayer === 'X' ? 'User1' : 'User2'}, you won!`;
     } 
     else if (isBoardFull()) 
     {
-        document.getElementById('winnerMessage').textContent = '⚠️ Warning: May contain traces of basic-level humans.';
+        document.getElementById('winnerMessage').textContent = 'It\'s a tie!';
     } 
     else 
     {
